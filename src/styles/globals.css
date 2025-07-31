@@ -1,0 +1,206 @@
+@import "tailwindcss";
+
+@theme {
+  /* Import colors from tailwind.config.js */
+  --color-primary-1: #E0ECF0;
+  --color-primary-2: #B3D4DD;
+  --color-primary-3: #A4CAD8;
+  --color-primary-4: #7D9FAC;
+  --color-primary-5: #566F7B;
+  --color-primary: #A4CAD8;
+  --color-primary-active: #7D9FAC;
+  
+  --color-secondary-1: #FFF8E1;
+  --color-secondary-2: #FFD54F;
+  --color-secondary-3: #FFC107;
+  --color-secondary-4: #E0A800;
+  --color-secondary-5: #C29300;
+  --color-secondary: #FFC107;
+  --color-secondary-active: #E0A800;
+  
+  --color-black-1: #0A0A0A;
+  --color-black-2: #1A1A1A;
+  --color-black-3: #333333;
+  --color-black-4: #555555;
+  --color-black-5: #777777;
+  
+  --color-white-1: #FFFFFF;
+  --color-white-2: #F5F5F5;
+  --color-white-3: #E0E0E0;
+  --color-white-4: #C0C0C0;
+  --color-white-5: #A0A0A0;
+  
+  --color-gray-1: #F0F0F0;
+  --color-gray-2: #C8C8C8;
+  --color-gray-3: #808080;
+  --color-gray-4: #585858;
+  --color-gray-5: #303030;
+  
+  --color-sky-1: #E0F2F7;
+  --color-sky-2: #B2EBF2;
+  --color-sky-3: #80DEEA;
+  --color-sky-4: #42A5F5;
+  --color-sky-5: #2196F3;
+  
+  --font-ibm-plex-serif: "IBM Plex Serif", serif;
+  --font-bangers: "Bangers", cursive;
+  --font-luckiest-guy: "Luckiest Guy", cursive;
+}
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  font-family: var(--font-ibm-plex-serif);
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: url('/background.png') no-repeat center center fixed;
+  background-size: cover;
+  min-height: 100vh;
+  font-family: var(--font-ibm-plex-serif);
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+.glowing{
+animation-name:glow;
+animation-duration:1.5s;
+animation-iteration-count:infinite;
+animation-direction:alternate;
+}
+
+@keyframes glow{
+from{text-shadow:0px 0px 0px #fff,0px 0px 0px #fffb1c;}
+to{text-shadow:0px 0px 12px #fff,0px 0px 5px rgb(131, 131, 131)}
+}
+/* Th
+eme-specific animations */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+}
+
+@keyframes pulse-glow {
+  0%, 100% { box-shadow: 0 0 20px rgba(147, 51, 234, 0.5); }
+  50% { box-shadow: 0 0 40px rgba(147, 51, 234, 0.8); }
+}
+
+@keyframes matrix-rain {
+  0% { transform: translateY(-100vh); opacity: 0; }
+  10% { opacity: 1; }
+  90% { opacity: 1; }
+  100% { transform: translateY(100vh); opacity: 0; }
+}
+
+@keyframes hologram-flicker {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.8; }
+  75% { opacity: 0.9; }
+}
+
+@keyframes scan-line {
+  0% { transform: translateY(-100%); }
+  100% { transform: translateY(100vh); }
+}
+
+@keyframes glitch {
+  0% { transform: translateX(0); }
+  20% { transform: translateX(-2px); }
+  40% { transform: translateX(2px); }
+  60% { transform: translateX(-1px); }
+  80% { transform: translateX(1px); }
+  100% { transform: translateX(0); }
+}
+
+.float-animation {
+  animation: float 6s ease-in-out infinite;
+}
+
+.pulse-glow {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+.matrix-text {
+  animation: matrix-rain 4s linear infinite;
+}
+
+.hologram-flicker {
+  animation: hologram-flicker 0.1s infinite;
+}
+
+.scan-line {
+  animation: scan-line 2s linear infinite;
+}
+
+.glitch-effect {
+  animation: glitch 0.3s infinite;
+}
+
+/* Gradient text effects */
+.gradient-text-cosmic {
+  background: linear-gradient(45deg, #8b5cf6, #ec4899, #3b82f6);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradient-shift 3s ease infinite;
+}
+
+.gradient-text-cyber {
+  background: linear-gradient(45deg, #00ff41, #00ffff, #ff0080);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradient-shift 2s ease infinite;
+}
+
+.gradient-text-holo {
+  background: linear-gradient(45deg, #00ffff, #ff00ff, #00ff00);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradient-shift 4s ease infinite;
+}
+
+@keyframes gradient-shift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* 3D Transform utilities */
+.transform-3d {
+  transform-style: preserve-3d;
+}
+
+.perspective {
+  perspective: 1000px;
+}
+
+/* Backdrop blur utilities for better browser support */
+.backdrop-blur-custom {
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+/* Custom scrollbar for cyber theme */
+.cyber-scrollbar::-webkit-scrollbar {
+  width: 8px;
+}
+
+.cyber-scrollbar::-webkit-scrollbar-track {
+  background: #000;
+}
+
+.cyber-scrollbar::-webkit-scrollbar-thumb {
+  background: #00ff41;
+  border-radius: 4px;
+}
+
+.cyber-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #00cc33;
+}
