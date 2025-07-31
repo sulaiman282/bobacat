@@ -3,7 +3,7 @@ import NavbarLink from "@/components/atoms/NavbarLink";
 const NavbarMenu = ({ activeSection, isDrawer, toggleDrawer }) => {
   const links = [
     { href: "/#home", label: "HOME" },
-    { href: "/#generate-meme", label: "GENERATE MEME" },
+    // { href: "/#generate-meme", label: "GENERATE MEME" },
   ];
 
   return (
