@@ -83,6 +83,24 @@ const ThemedMusicPlayer = ({ theme = 'default' }) => {
           border: 'border border-cyan-400/30',
           glow: '0 0 20px rgba(0, 255, 255, 0.6)',
         };
+      case 'minimal':
+        return {
+          bg: 'bg-white border-2 border-gray-200',
+          hover: 'hover:border-gray-300 hover:bg-gray-50',
+          shadow: 'shadow-lg',
+          hoverShadow: 'hover:shadow-xl',
+          border: '',
+          glow: '0 10px 30px rgba(0, 0, 0, 0.1)',
+        };
+      case 'retro':
+        return {
+          bg: 'bg-gradient-to-r from-pink-500 to-cyan-400 border-2 border-pink-500',
+          hover: 'hover:from-pink-400 hover:to-cyan-300',
+          shadow: 'shadow-lg shadow-pink-500/25',
+          hoverShadow: 'hover:shadow-pink-500/50',
+          border: '',
+          glow: '0 0 25px rgba(255, 20, 147, 0.6)',
+        };
       default:
         return {
           bg: 'bg-black',
@@ -187,6 +205,35 @@ const ThemedMusicPlayer = ({ theme = 'default' }) => {
           }}
           transition={{
             duration: 2,
+            repeat: Infinity,
+          }}
+        />
+      )}
+
+      {theme === 'minimal' && isPlaying && (
+        <motion.div
+          className="absolute inset-0 rounded-full bg-gradient-to-r from-orange-400 to-pink-400 opacity-20 blur-md"
+          animate={{
+            scale: [1, 1.2, 1],
+            opacity: [0.2, 0.4, 0.2],
+          }}
+          transition={{
+            duration: 2,
+            repeat: Infinity,
+          }}
+        />
+      )}
+
+      {theme === 'retro' && isPlaying && (
+        <motion.div
+          className="absolute inset-0 rounded-full border-2 border-cyan-400 opacity-60"
+          animate={{
+            scale: [1, 1.3, 1],
+            opacity: [0.6, 0, 0.6],
+            borderColor: ['#ff1493', '#00ffff', '#ffff00', '#ff1493'],
+          }}
+          transition={{
+            duration: 1.5,
             repeat: Infinity,
           }}
         />
