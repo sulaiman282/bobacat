@@ -42,7 +42,7 @@ const SideDrawer = ({ isOpen, toggleDrawer, activeSection }) => {
           {/* Logo and Title */}
           <div className="flex items-center space-x-2 mb-4 ">
             <img src="/logo.png" alt="Logo" className="h-8" />
-            <span className="text-xl font-bold text-[#1A1A1A]">BOBA CAT</span>
+            <span className="text-xl font-bold text-[#1A1A1A]">BOBA</span>
           </div>
          <div className="mt-10 space-y-4">
          <NavbarMenu activeSection={activeSection} isDrawer={true} toggleDrawer={toggleDrawer} />

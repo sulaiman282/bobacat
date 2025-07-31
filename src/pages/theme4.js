@@ -6,8 +6,8 @@ export default function Theme4() {
   return (
     <>
       <Head>
-        <title>BOBA CAT - Minimalist Theme</title>
-        <meta name="description" content="BOBA CAT - Clean Minimalist Design" />
+        <title>BOBA - Minimalist Theme</title>
+        <meta name="description" content="BOBA - Clean Minimalist Design" />
       </Head>
       <Theme4Layout />
     </>

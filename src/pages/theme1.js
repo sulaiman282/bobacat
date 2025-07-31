@@ -6,8 +6,8 @@ export default function Theme1() {
   return (
     <>
       <Head>
-        <title>BOBA CAT - Cosmic Theme</title>
-        <meta name="description" content="BOBA CAT - Cosmic 3D Experience" />
+        <title>BOBA - Cosmic Theme</title>
+        <meta name="description" content="BOBA - Cosmic 3D Experience" />
       </Head>
       <Theme1Layout />
     </>

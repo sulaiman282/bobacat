@@ -1,9 +1,9 @@
 import { Html, Head, Main, NextScript } from "next/document";
 
 export default function Document() {
-  const siteTitle = "BOBA CAT - $BOBACAT Official Website";
-  const siteDescription = "Official website for BOBA CAT ($BOBACAT) token. Find us on Dexscreener, Dextools, and Raydium.";
-  const siteUrl = "https://www.bobacat.io"; // TODO: Replace with your actual website URL
+  const siteTitle = "BOBA - $BOBA Official Website";
+  const siteDescription = "Official website for BOBA ($BOBA) token. Find us on Dexscreener, Dextools, and Raydium.";
+  const siteUrl = "https://www.BOBA.io"; // TODO: Replace with your actual website URL
   const ogImageUrl = `${siteUrl}/logo.png`;
 
   return (
@@ -12,8 +12,8 @@ export default function Document() {
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="description" content={siteDescription} />
-        <meta name="keywords" content="BOBA CAT, BOBACAT, crypto, token, Dexscreener, Dextools, Raydium, cryptocurrency" />
-        <meta name="author" content="BOBA CAT Team" />
+        <meta name="keywords" content="BOBA, BOBA, crypto, token, Dexscreener, Dextools, Raydium, cryptocurrency" />
+        <meta name="author" content="BOBA Team" />
         <meta name="robots" content="index, follow" />
 
         {/* Open Graph Meta Tags */}

@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <main>
       <Head>
-        <title>BOBA CAT</title>
+        <title>BOBA</title>
       </Head>
       <Navbar />
       <HomeSection />

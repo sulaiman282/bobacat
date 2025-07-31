@@ -25,7 +25,7 @@ const Theme2Layout = () => {
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
 
-    const matrix = "BOBACATMEMECOIN01";
+    const matrix = "BOBAMEMECOIN01";
     const matrixArray = matrix.split("");
     const fontSize = 12;
     const columns = canvas.width / fontSize;
@@ -156,7 +156,7 @@ const Theme2Layout = () => {
             >
               <motion.img
                 src="/home.png"
-                alt="BOBA CAT"
+                alt="BOBA"
                 className="w-[300px] h-[300px] md:w-[400px] md:h-[400px] lg:w-[500px] lg:h-[500px] object-contain relative z-10"
                 style={{
                   filter: 'drop-shadow(0 0 30px #00ff41) contrast(1.3) saturate(1.4) brightness(1.1)',
@@ -243,7 +243,7 @@ const Theme2Layout = () => {
             transition={{ duration: 1 }}
           >
             <h1 className="text-6xl md:text-8xl lg:text-9xl font-bold text-green-400 font-mono text-center relative">
-              BOBA CAT
+              BOBA
               {/* Scanning Line Effect */}
               <motion.div
                 className="absolute inset-0 bg-gradient-to-r from-transparent via-green-400 to-transparent opacity-40 h-1"
@@ -271,7 +271,7 @@ const Theme2Layout = () => {
                 repeatType: "reverse",
               }}
             >
-              BOBA CAT
+              BOBA
             </motion.h1>
           </motion.div>
 
@@ -294,7 +294,7 @@ const Theme2Layout = () => {
               />
             </div>
             <div className="text-sm md:text-base space-y-1">
-              <p>{'> Initializing BOBA CAT protocol...'}</p>
+              <p>{'> Initializing BOBA protocol...'}</p>
               <p>{'> Connecting to blockchain network...'}</p>
               <p>{'> Status: ONLINE - Ready for moon mission 🚀'}</p>
             </div>

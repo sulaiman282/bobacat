@@ -74,7 +74,7 @@ const Navbar = () => {
           {/* Left: Logo and Title */}
           <div className="flex items-center space-x-2">
             <img src="/logo.png" alt="Logo" className="h-8" />
-            <span className="text-xl font-bold text-black-1">BOBA CAT</span>
+            <span className="text-xl font-bold text-black-1">BOBA</span>
           </div>
 
           {/* Center: Navbar Menu and Social Links */}

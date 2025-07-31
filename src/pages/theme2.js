@@ -6,8 +6,8 @@ export default function Theme2() {
   return (
     <>
       <Head>
-        <title>BOBA CAT - Neon Cyber Theme</title>
-        <meta name="description" content="BOBA CAT - Neon Cyber 3D Experience" />
+        <title>BOBA - Neon Cyber Theme</title>
+        <meta name="description" content="BOBA - Neon Cyber 3D Experience" />
       </Head>
       <Theme2Layout />
     </>

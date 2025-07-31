@@ -147,7 +147,7 @@ const Theme3Layout = () => {
             >
               <motion.img
                 src="/home.png"
-                alt="BOBA CAT"
+                alt="BOBA"
                 className="w-[300px] h-[300px] md:w-[400px] md:h-[400px] lg:w-[500px] lg:h-[500px] object-contain relative z-10"
                 style={{
                   filter: 'drop-shadow(0 0 40px #00ffff) drop-shadow(0 0 80px #ff00ff) brightness(1.3) contrast(1.2)',
@@ -252,7 +252,7 @@ const Theme3Layout = () => {
                 textShadow: '0 0 60px rgba(0, 255, 255, 0.6), 0 0 120px rgba(255, 0, 255, 0.4)',
               }}
             >
-              BOBA CAT
+              BOBA
             </h1>
             
             {/* Holographic Shimmer Effect */}
@@ -308,7 +308,7 @@ const Theme3Layout = () => {
               </motion.h3>
               
               <p className="text-cyan-200 text-center mb-6 text-lg">
-                Experience BOBA CAT in a new dimension where reality meets digital dreams
+                Experience BOBA in a new dimension where reality meets digital dreams
               </p>
               
               {/* Contract Address Hologram */}
@@ -419,13 +419,13 @@ const Theme3Layout = () => {
             >
               <div className="flex items-center space-x-3">
                 <img src="/logo.png" alt="Logo" className="h-8 w-8" />
-                <span className="text-xl font-bold text-cyan-400">BOBA CAT</span>
+                <span className="text-xl font-bold text-cyan-400">BOBA</span>
               </div>
               
               <div className="flex flex-col items-center space-y-4">
                 <SocialIconsGroup />
                 <p className="text-cyan-300 text-sm">
-                  © 2024 BOBA CAT. Transcending dimensions.
+                  © 2024 BOBA. Transcending dimensions.
                 </p>
               </div>
               

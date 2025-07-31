@@ -6,8 +6,8 @@ export default function Theme3() {
   return (
     <>
       <Head>
-        <title>BOBA CAT - Holographic Theme</title>
-        <meta name="description" content="BOBA CAT - Holographic 3D Experience" />
+        <title>BOBA - Holographic Theme</title>
+        <meta name="description" content="BOBA - Holographic 3D Experience" />
       </Head>
       <Theme3Layout />
     </>

@@ -150,7 +150,7 @@ const Theme1Layout = () => {
           >
             <motion.img
               src="/home.png"
-              alt="BOBA CAT"
+              alt="BOBA"
               className="w-[300px] h-[300px] md:w-[400px] md:h-[400px] lg:w-[500px] lg:h-[500px] object-contain relative z-10"
               style={{
                 filter: 'drop-shadow(0 0 40px rgba(147, 51, 234, 0.8)) drop-shadow(0 0 80px rgba(59, 130, 246, 0.4))',
@@ -199,7 +199,7 @@ const Theme1Layout = () => {
               textShadow: '0 0 50px rgba(147, 51, 234, 0.5)',
             }}
           >
-            BOBA CAT
+            BOBA
           </motion.h1>
 
           {/* Contract Address with 3D Effect */}
@@ -294,13 +294,13 @@ const Theme1Layout = () => {
             >
               <div className="flex items-center space-x-3">
                 <img src="/logo.png" alt="Logo" className="h-8 w-8" />
-                <span className="text-xl font-bold text-white">BOBA CAT</span>
+                <span className="text-xl font-bold text-white">BOBA</span>
               </div>
               
               <div className="flex flex-col items-center space-y-4">
                 <SocialIconsGroup />
                 <p className="text-purple-200 text-sm">
-                  © 2024 BOBA CAT. Journey through the cosmos.
+                  © 2024 BOBA. Journey through the cosmos.
                 </p>
               </div>
               

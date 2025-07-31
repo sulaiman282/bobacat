@@ -117,7 +117,7 @@ const Theme4Layout = () => {
             >
               <img
                 src="/home.png"
-                alt="BOBA CAT"
+                alt="BOBA"
                 className="w-[280px] h-[280px] md:w-[380px] md:h-[380px] lg:w-[480px] lg:h-[480px] object-contain"
                 style={{
                   filter: 'drop-shadow(0 20px 40px rgba(0, 0, 0, 0.1))',
@@ -142,7 +142,7 @@ const Theme4Layout = () => {
               backgroundClip: 'text',
             }}
           >
-            BOBA CAT
+            BOBA
           </motion.h1>
 
           {/* Subtitle */}
@@ -195,7 +195,7 @@ const Theme4Layout = () => {
               }}
               whileTap={{ scale: 0.95 }}
             >
-              Buy BOBA CAT
+              Buy BOBA
             </motion.button>
             
             <motion.button
@@ -269,13 +269,13 @@ const Theme4Layout = () => {
             >
               <div className="flex items-center space-x-3">
                 <img src="/logo.png" alt="Logo" className="h-10 w-10" />
-                <span className="text-2xl font-bold text-gray-800">BOBA CAT</span>
+                <span className="text-2xl font-bold text-gray-800">BOBA</span>
               </div>
               
               <div className="flex flex-col items-center space-y-4">
                 <SocialIconsGroup />
                 <p className="text-gray-500 text-sm">
-                  © 2024 BOBA CAT. Made with ❤️ for the community.
+                  © 2024 BOBA. Made with ❤️ for the community.
                 </p>
               </div>
               

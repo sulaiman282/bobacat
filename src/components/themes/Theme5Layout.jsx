@@ -182,7 +182,7 @@ const Theme5Layout = () => {
             >
               <img
                 src="/home.png"
-                alt="BOBA CAT"
+                alt="BOBA"
                 className="w-[300px] h-[300px] md:w-[400px] md:h-[400px] lg:w-[500px] lg:h-[500px] object-contain relative z-10"
                 style={{
                   filter: 'drop-shadow(0 0 30px #ff1493) drop-shadow(0 0 60px #00ffff)',
@@ -231,7 +231,7 @@ const Theme5Layout = () => {
               animation: 'gradient-wave 3s ease infinite',
             }}
           >
-            BOBA CAT
+            BOBA
           </motion.h1>
 
           {/* Retro Subtitle */}
@@ -293,7 +293,7 @@ const Theme5Layout = () => {
               }}
               whileTap={{ scale: 0.95 }}
             >
-              <span className="relative z-10">BUY BOBA CAT</span>
+              <span className="relative z-10">BUY BOBA</span>
               <motion.div
                 className="absolute inset-0 bg-gradient-to-r from-cyan-400 to-pink-500"
                 initial={{ x: '-100%' }}
@@ -388,13 +388,13 @@ const Theme5Layout = () => {
             >
               <div className="flex items-center space-x-3">
                 <img src="/logo.png" alt="Logo" className="h-10 w-10" />
-                <span className="text-2xl font-bold text-cyan-300 font-bangers">BOBA CAT</span>
+                <span className="text-2xl font-bold text-cyan-300 font-bangers">BOBA</span>
               </div>
               
               <div className="flex flex-col items-center space-y-4">
                 <SocialIconsGroup />
                 <p className="text-pink-300 text-sm">
-                  © 2024 BOBA CAT. Surfing the retro waves since forever.
+                  © 2024 BOBA. Surfing the retro waves since forever.
                 </p>
               </div>
               
